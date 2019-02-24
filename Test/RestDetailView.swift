@@ -120,7 +120,7 @@ func hitService(){
         case .success(_):
             if response.result.value != nil{
                 if  let value = response.result.value{
-                    _ = Array<JSON>()
+                    var restaurantList = Array<JSON>()
                     self.restaurantList2 = Array<JSON>()
                     
                     let json = JSON(value)
